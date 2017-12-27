@@ -35,7 +35,11 @@
         .position-ref {
             position: relative;
         }
-
+        .top-left {
+            position: absolute;
+            left: 10px;
+            top: 18px;
+        }
         .top-right {
             position: absolute;
             right: 10px;
@@ -68,6 +72,9 @@
 </head>
 <body>
 <div class="flex-center position-ref full-height">
+<div class="top-left links">
+    <img src="https://upload.wikimedia.org/wikipedia/zh/c/cd/Logo_85%E5%BA%A6C.png" width="50%" height="50%">
+</div>
     @if (Route::has('login'))
         <div class="top-right links">
             @if (Auth::check())
@@ -79,9 +86,10 @@
         </div>
     @endif
 
+
     <div class="content">
         <div class="title m-b-md">
-            <img src="https://upload.wikimedia.org/wikipedia/zh/c/cd/Logo_85%E5%BA%A6C.png" width="50%" height="50%">
+
         </div>
 
         <div class="links">
