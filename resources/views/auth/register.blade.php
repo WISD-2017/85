@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 @extends('layouts.master')
 @section('title','註冊')
 @section('content')

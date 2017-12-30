@@ -1,6 +1,6 @@
+<!DOCTYPE html>
 @extends('layouts.master')
 @section('title','登入')
-
 @section('content')
 </br>
 </br>
