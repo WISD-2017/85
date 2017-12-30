@@ -8,13 +8,19 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>@yield('title') 85度</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>85度C @yield('title')</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/shop-item.css" rel="stylesheet">
+
+
 
 </head>
 
@@ -23,32 +29,30 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-        <img src="https://upload.wikimedia.org/wikipedia/zh/c/cd/Logo_85%E5%BA%A6C.png" width="5%" height="5%">
-        <a class="navbar-brand" href="#" style="font-weight:bold; font-size:20px; color: #FFFFFF;">　　85度c線上訂購網</a>
+        <img src="https://upload.wikimedia.org/wikipedia/zh/c/cd/Logo_85%E5%BA%A6C.png" width="60px" height="60px">
+        <a href="{{url('/')}}" style="font-weight:bold; font-family: 王漢宗細黑體繁; font-size:20px; color: #FFFFFF; text-decoration:none;">　85度C線上訂購網</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">商品專區
-                        <span class="sr-only">(current)</span>
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url('/store')}}" style="font-size: 14px; font-family: 王漢宗細黑體繁;">商品專區</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">聯絡我們</a>
+                    <a class="nav-link" href="#" style="font-size: 14px; font-family: 王漢宗細黑體繁;">聯絡我們</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">購物車</a>
+                    <a class="nav-link" href="#" style="font-size: 14px; font-family: 王漢宗細黑體繁;">購物車</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">會員專區</a>
+                    <a class="nav-link" href="#" style="font-size: 14px; font-family: 王漢宗細黑體繁;">會員專區</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('login') }}">登入</a>
+                    <a class="nav-link" href="{{ route('login') }}" style="font-size: 14px; font-family: 王漢宗細黑體繁;">登入</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('register') }}">註冊</a>
+                    <a class="nav-link" href="{{ route('register') }}" style="font-size: 14px; font-family: 王漢宗細黑體繁;">註冊</a>
                 </li>
             </ul>
         </div>
