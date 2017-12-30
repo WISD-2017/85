@@ -11,10 +11,19 @@
 |
 */
 
-Route::get('/', function () {
-    return view('store');
-});
 
+
+//laravel內建的身分驗證功能
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//首頁路由
+Route::get('/', function () {
+    return view('index');
+});
+
+//商品專區路由
+Route::get('/store', function (){
+    return view('store');
+});
