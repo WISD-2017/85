@@ -2,7 +2,9 @@
 @section('title','首頁')
 @section('content')
 
-
+</br>
+</br>
+</br>
 <center>
 <div class="container">
     <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 960px; height:500px;">
