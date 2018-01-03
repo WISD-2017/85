@@ -29,3 +29,8 @@ Route::get('/manager', function () {
 Route::get('/store', function (){
     return view('store');
 });
+
+//購物車路由
+Route::get('/cart', function (){
+    return view('cart');
+});
