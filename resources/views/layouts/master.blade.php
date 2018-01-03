@@ -43,17 +43,53 @@
                     <a class="nav-link" href="{{url('/contact')}}" style="font-size: 16px; font-family: 微軟正黑體;">聯絡我們</a>
                 </li>
                 <li class="nav-item">
+<<<<<<< HEAD
                     <a class="nav-link" href="#" style="font-size: 16px; font-family: 微軟正黑體;">購物車</a>
+=======
+                    <a class="nav-link" href="{{url('/cart')}}" style="font-size: 14px; font-family: 王漢宗細黑體繁;">購物車</a>
+>>>>>>> c4aaf6af32fbaba62adf18d665e01cdb8397d819
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" style="font-size: 16px; font-family: 微軟正黑體;">會員專區</a>
                 </li>
+<<<<<<< HEAD
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('login') }}" style="font-size: 16px; font-family: 微軟正黑體;">登入</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('register') }}" style="font-size: 16px; font-family: 微軟正黑體;">註冊</a>
                 </li>
+=======
+                @if (Auth::guest())
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('login') }}" style="font-size: 14px; font-family: 王漢宗細黑體繁;">登入</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('register') }}" style="font-size: 14px; font-family: 王漢宗細黑體繁;">註冊</a>
+                    </li>
+                @else
+                    <li class="dropdown">
+                        <a href="#" class="nav-link"  data-toggle="dropdown" role="button" aria-expanded="false" style="font-size: 14px; font-family: 王漢宗細黑體繁;">
+                            歡迎! {{ Auth::user()->name }} <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+
+                                                     document.getElementById('logout-form').submit();">
+                                    登出
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                @endif
+>>>>>>> c4aaf6af32fbaba62adf18d665e01cdb8397d819
             </ul>
         </div>
     </div>

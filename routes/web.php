@@ -22,13 +22,21 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', function () {
     return view('index');
 });
-
+Route::get('/manager', function () {
+    return view('manager');
+});
 //商品專區路由
 Route::get('/store', function (){
     return view('store');
 });
 
+<<<<<<< HEAD
 //聯絡我們路由
 Route::get('/contact', function (){
     return view('contact');
+=======
+//購物車路由
+Route::get('/cart', function (){
+    return view('cart');
+>>>>>>> c4aaf6af32fbaba62adf18d665e01cdb8397d819
 });
