@@ -22,7 +22,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', function () {
     return view('index');
 });
-
+Route::get('/manager', function () {
+    return view('manager');
+});
 //商品專區路由
 Route::get('/store', function (){
     return view('store');
