@@ -43,7 +43,7 @@
                     <a class="nav-link" href="#" style="font-size: 14px; font-family: 王漢宗細黑體繁;">聯絡我們</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="font-size: 14px; font-family: 王漢宗細黑體繁;">購物車</a>
+                    <a class="nav-link" href="{{url('/cart')}}" style="font-size: 14px; font-family: 王漢宗細黑體繁;">購物車</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" style="font-size: 14px; font-family: 王漢宗細黑體繁;">會員專區</a>
