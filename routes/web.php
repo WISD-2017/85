@@ -27,3 +27,8 @@ Route::get('/', function () {
 Route::get('/store', function (){
     return view('store');
 });
+
+//聯絡我們路由
+Route::get('/contact', function (){
+    return view('contact');
+});
