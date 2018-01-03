@@ -25,16 +25,16 @@ class HomeController extends Controller
     {
         return Admin::content(function (Content $content) {
 
-            $content->header('Dashboard');
-            $content->description('Description...');
+            $content->header('85度C後台管理');
+            $content->description('');
 
             $content->row(function ($row) {
-                $row->column(3, new InfoBox('New Users', 'users', 'aqua', '/admin/users', '1024'));
-                $row->column(3, new InfoBox('New Orders', 'shopping-cart', 'green', '/admin/orders', '150%'));
-                $row->column(3, new InfoBox('Articles', 'book', 'yellow', '/admin/articles', '2786'));
-                $row->column(3, new InfoBox('Documents', 'file', 'red', '/admin/files', '698726'));
-            });
+                $row->column(4, new InfoBox('訂單管理', '', 'aqua', '/admin/users', ''));
+                $row->column(4, new InfoBox('商品管理', '', 'green', '/admin/orders', ''));
+                $row->column(4, new InfoBox('銷售紀錄', '', 'yellow', '/admin/articles', ''));
 
+            });
+/*
             $content->row(function (Row $row) {
 
                 $row->column(6, function (Column $column) {
@@ -48,7 +48,7 @@ class HomeController extends Controller
 
                     $tab->add('Pie', $pie);
                     $tab->add('Table', new Table());
-                    $tab->add('Text', 'blablablabla....');
+                    $tab->add('Text', 'hello');
 
                     $tab->dropDown([['Orders', '/admin/orders'], ['administrators', '/admin/administrators']]);
                     $tab->title('Tabs');
@@ -110,6 +110,8 @@ class HomeController extends Controller
             ];
 
             $content->row((new Box('Table', new Table($headers, $rows)))->style('info')->solid());
+            */
         });
     }
 }
+
